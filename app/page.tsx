@@ -52,7 +52,7 @@ export default function HomePage() {
             Executive Partner voor ondernemers, bestuurders en professionals
           </div>
           <h1 className="mb-6 font-serif text-[clamp(40px,5.2vw,64px)] leading-[1.08] font-medium text-ink">
-            Overzicht terug in organisaties die te snel gaan.
+            Rust achter de schermen. Ruimte voor wat echt belangrijk is.
           </h1>
           <p className="mb-[34px] max-w-[480px] text-lg leading-[1.6] text-ink-soft">
             Van strategische coördinatie en executive support tot

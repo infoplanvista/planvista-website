@@ -17,7 +17,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "PlanVista — Executive Partner voor ondernemers en bestuurders",
+  title: "PlanVista | Executive Partner",
   description:
     "Executive support, strategische coördinatie en lifestyle management.",
 };
