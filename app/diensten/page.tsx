@@ -3,29 +3,29 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Diensten — Planvista",
+  title: "Diensten — PlanVista",
 };
 
 const SERVICES = [
   {
     number: "01",
-    title: "Strategische ondersteuning",
-    body: "Ik ondersteun directie en management bij het behouden van overzicht in de dagelijkse operatie en besluitvorming — het structureren van prioriteiten en het verbinden van informatie, acties en besluiten.",
+    title: "Executive Support",
+    body: "Als jouw vaste rechterhand zorg ik voor overzicht, structuur en continuïteit. Ik bewaak prioriteiten, denk vooruit en zorg dat alles achter de schermen soepel verloopt, zodat jij je kunt richten op de beslissingen die er echt toe doen.",
   },
   {
     number: "02",
-    title: "Project- en procescoördinatie",
-    body: "Voor trajecten waarin meerdere stakeholders, belangen en afhankelijkheden samenkomen. Ik breng structuur in de voortgang en bewaak de samenhang zodat projecten blijven bewegen.",
+    title: "Strategic Coordination",
+    body: "Wanneer meerdere projecten, stakeholders en verantwoordelijkheden samenkomen, breng ik structuur en samenhang. Ik bewaak de voortgang, houd overzicht en zorg dat plannen daadwerkelijk worden uitgevoerd.",
   },
   {
     number: "03",
-    title: "Bijeenkomsten & events",
-    body: "Coördinatie van bijeenkomsten, sessies en offsites. Ik zorg dat voorbereiding, inhoud, planning en uitvoering op elkaar aansluiten, zodat het geheel overzichtelijk verloopt.",
+    title: "Travel and Lifestyle Management",
+    body: "Van internationale zakenreizen en exclusieve accommodaties tot persoonlijke afspraken en bijzondere verzoeken. Ik regel alles zorgvuldig en met oog voor detail, zodat jij nergens naar hoeft om te kijken.",
   },
   {
     number: "04",
-    title: "Structuur en opvolging",
-    body: "Zorgvuldige afstemming en opvolging van afspraken en acties, zodat helderheid ontstaat en processen beheersbaar en overzichtelijk blijven.",
+    title: "Events and Experiences",
+    body: "Van bestuursvergaderingen en offsites tot exclusieve diners en zakelijke evenementen. Ik verzorg de volledige coördinatie, zodat ieder detail klopt en jij je volledig kunt richten op je gasten of deelnemers.",
   },
 ];
 
@@ -42,12 +42,15 @@ export default function DienstenPage() {
             Diensten
           </div>
           <h1 className="mb-5 font-serif text-[clamp(34px,4.6vw,50px)] leading-[1.14] font-medium text-ink">
-            Structuur, overzicht en voortgang — daar waar het complex wordt.
+            Discrete ondersteuning die rust, overzicht en ruimte creëert.
           </h1>
           <p className="max-w-[460px] text-[17px] leading-[1.6] text-ink-soft">
-            Elke inzet begint met een goed gesprek: waar ontbreekt overzicht,
-            wie is erbij betrokken en wat is er al geprobeerd? Hieronder de
-            manieren waarop ik doorgaans word ingezet.
+            Geen enkele samenwerking is hetzelfde. Daarom begint iedere
+            opdracht met een kennismaking waarin we bespreken waar jij
+            behoefte aan hebt en hoe ik het verschil kan maken. Van executive
+            support en strategische coördinatie tot internationale reizen,
+            evenementen en persoonlijke ondersteuning. Altijd afgestemd op
+            jouw manier van werken.
           </p>
         </Reveal>
 
@@ -59,7 +62,7 @@ export default function DienstenPage() {
           <div className="relative aspect-[2/3] overflow-hidden rounded-[28px] bg-muted">
             <Image
               src="/diensten.jpg"
-              alt="Planvista aan het werk"
+              alt="PlanVista aan het werk"
               fill
               sizes="(min-width: 1024px) 360px, 90vw"
               className="object-cover object-top"
@@ -95,8 +98,12 @@ export default function DienstenPage() {
 
       <Reveal className="mx-auto max-w-[900px] px-8 py-[90px] text-center">
         <h2 className="mb-5 font-serif text-[clamp(28px,4vw,42px)] font-medium text-ink">
-          Welke inzet past bij jouw situatie?
+          Benieuwd hoe PlanVista jou kan ondersteunen?
         </h2>
+        <p className="mb-[30px] text-lg text-ink-soft">
+          Plan een vrijblijvende kennismaking en ontdek wat een betrouwbare
+          Executive Partner voor jou kan betekenen.
+        </p>
         <a
           href="mailto:info@planvista.nl"
           className="rounded-full bg-ink px-8 py-[15px] text-[15px] font-medium text-cream transition-opacity hover:opacity-90"

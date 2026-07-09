@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Algemene voorwaarden — Planvista",
+  title: "Algemene voorwaarden — PlanVista",
 };
 
 export default function AlgemeneVoorwaardenPage() {
@@ -19,7 +19,7 @@ export default function AlgemeneVoorwaardenPage() {
         Algemene voorwaarden
       </h1>
       <p className="mb-[34px] text-[16.5px] leading-[1.7] text-ink-soft">
-        De volledige algemene voorwaarden van Planvista zijn als document
+        De volledige algemene voorwaarden van PlanVista zijn als document
         beschikbaar. Download of bekijk ze via onderstaande link.
       </p>
       <a

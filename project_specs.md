@@ -1,9 +1,12 @@
-# Project Specs — Planvista Website
+# Project Specs — PlanVista Website
 
 ## What it is / who uses it
-A 6-page Dutch-language marketing/brochure site for Planvista, a solo interim
-"structuur & regie" consultancy. Public visitors only — no login, no accounts,
-no admin area. One interactive piece: a contact form that emails the founder.
+A 6-page Dutch-language marketing/brochure site for PlanVista, positioned as
+an Executive Partner for entrepreneurs, executives and professionals
+(executive support, strategic coordination, and travel/lifestyle/event
+management — repositioned in 2026-07 from the original "interim structuur &
+regie" framing). Public visitors only — no login, no accounts, no admin area.
+One interactive piece: a contact form that emails the founder.
 
 ## Tech stack
 - **Framework:** Next.js (App Router), TypeScript
@@ -23,10 +26,10 @@ All routes public, all share the same header + footer.
 
 | Route | Page | Purpose |
 |---|---|---|
-| `/` | Home | Hero, 3 value cards, testimonials (placeholder — flagged), CTA band |
-| `/over-planvista` | Over Planvista | Founder story, photo + copy, positioning statement, CTA band |
+| `/` | Home | Hero, 3 value cards, "Waarom kiezen voor PlanVista?" checklist, CTA band |
+| `/over-planvista` | Over PlanVista | Founder story / Executive Partner positioning, photo + copy, CTA band |
 | `/diensten` | Diensten | Hero, 2×2 services grid (4 numbered cards), CTA band |
-| `/tarieven` | Tarieven | Intro, 2-column pricing/engagement comparison cards |
+| `/samenwerken` | Samenwerken | Intro, 2-column engagement comparison cards (renamed from Tarieven, 2026-07) |
 | `/contact` | Contact | Intro + photo + social links, working contact form |
 | `/algemene-voorwaarden` | Algemene Voorwaarden | Short legal pass-through page with an outbound link |
 
@@ -63,9 +66,18 @@ Tasteful, not cheesy — subtle entrance and scroll reveals, no bouncing/gimmick
 - No animation blocks initial content from being visible/readable if JS is slow — content is real DOM, not injected by GSAP
 
 ## Known content gaps (from the design handoff — flag, don't block on)
-1. Home page testimonials are placeholder quotes — marked in-page as examples, need replacing with real ones before launch.
-2. Web3Forms access key: real key provided by the client, stored in `.env.local` as `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` (not committed to git). The form POSTs client-side to `api.web3forms.com/submit` exactly as in the original design.
-3. Algemene Voorwaarden page currently links out to a `.docx` on the old Squarespace domain — I'll keep it as an external link exactly as designed; swapping it for a real hosted doc is a separate follow-up.
+1. Web3Forms access key: real key provided by the client, stored in `.env.local` as `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` (not committed to git). The form POSTs client-side to `api.web3forms.com/submit` exactly as in the original design.
+2. Algemene Voorwaarden page currently links out to a `.docx` on the old Squarespace domain — kept as an external link exactly as designed; swapping it for a real hosted doc is a separate follow-up.
+
+## Positioning update (2026-07)
+Repositioned from "interim structuur & regie" to "Executive Partner" for
+entrepreneurs, executives and professionals, adding travel/lifestyle/event
+management alongside executive support and strategic coordination. Home page
+testimonials section was replaced with a "Waarom kiezen voor PlanVista?"
+checklist (no client testimonials exist yet — revisit adding real ones once
+available). The old white "positioning statement" band on Over PlanVista was
+removed since its copy referenced the retired interim/project-basis framing
+and no replacement text was provided.
 
 ## What "done" looks like
 - All 6 routes exist, render responsively (mobile/tablet/desktop), and match the handoff's colors/typography/spacing/copy

@@ -99,7 +99,7 @@ export default function ContactForm() {
       </button>
       {status === "success" && (
         <div className="rounded-xl bg-success-bg px-4 py-3 text-sm text-success-text">
-          Bedankt! Je bericht is verstuurd — je hoort snel van Planvista.
+          Bedankt! Je bericht is verstuurd — je hoort snel van PlanVista.
         </div>
       )}
       {status === "error" && (

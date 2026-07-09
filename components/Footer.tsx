@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
-  { href: "/over-planvista", label: "Over Planvista" },
+  { href: "/over-planvista", label: "Over PlanVista" },
   { href: "/diensten", label: "Diensten" },
-  { href: "/tarieven", label: "Tarieven" },
+  { href: "/samenwerken", label: "Samenwerken" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -13,11 +14,16 @@ export default function Footer() {
     <footer className="mt-auto bg-dark px-8 pt-14 pb-[30px] text-dark-text">
       <div className="mx-auto flex max-w-[1180px] flex-wrap justify-between gap-9">
         <div className="max-w-[320px]">
-          <div className="inline-flex items-center gap-2.5 border border-[#6B5A45] px-[18px] py-[10px] font-serif text-[22px] tracking-[0.08em] text-dark-text">
-            PLANVISTA
-          </div>
+          <Image
+            src="/logo.png"
+            alt="PlanVista"
+            width={228}
+            height={226}
+            className="h-16 w-16 object-contain"
+          />
           <p className="mt-[18px] text-sm leading-relaxed text-dark-muted">
-            Structuur en overzicht in organisaties waar complexiteit toeneemt.
+            Executive support, strategische coördinatie en lifestyle
+            management.
           </p>
         </div>
 
@@ -57,7 +63,7 @@ export default function Footer() {
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/company/planvistaservices"
+                href="https://www.linkedin.com/in/bo-iqbal-aa9ba5173"
                 className="text-dark-text hover:text-accent-light"
               >
                 LinkedIn
@@ -68,7 +74,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-11 flex max-w-[1180px] flex-wrap justify-between gap-4 border-t border-border-dark pt-[22px] text-[13px] text-accent">
-        <span>© 2026 Planvista</span>
+        <span>© 2026 PlanVista</span>
         <Link href="/algemene-voorwaarden" className="text-accent hover:text-accent-light">
           Algemene voorwaarden
         </Link>

@@ -5,36 +5,37 @@ import Reveal from "@/components/Reveal";
 const VALUE_CARDS = [
   {
     number: "01",
-    title: "Structuur in complexiteit",
-    body: "Ik breng orde aan in projecten en processen waar veel tegelijk speelt en verantwoordelijkheden elkaar kruisen.",
+    title: "Executive Support",
+    body: "Discreet en proactief beheer van agenda's, communicatie, besluitvorming en dagelijkse coördinatie.",
   },
   {
     number: "02",
-    title: "Regie over voortgang",
-    body: "Ik bewaak de samenhang tussen teams, besluiten en deadlines, zodat werk daadwerkelijk wordt afgerond.",
+    title: "Strategic Coordination",
+    body: "Ik bewaak projecten, processen en prioriteiten zodat plannen daadwerkelijk worden uitgevoerd.",
   },
   {
     number: "03",
-    title: "Bijeenkomsten & events",
-    body: "Van bestuurlijke sessies tot zakelijke events — voorbereiding, inhoud en uitvoering op elkaar afgestemd.",
+    title: "Travel, Lifestyle & Events",
+    body: "Van internationale reizen en exclusieve evenementen tot persoonlijke verzoeken en concierge services: alles zorgvuldig georganiseerd.",
   },
 ];
 
-const TESTIMONIALS = [
+const WHY_CHOOSE = [
   {
-    quote:
-      "Eindelijk overzicht in een traject waar iedereen het spoor kwijt was. Planvista bracht rust en een duidelijke lijn.",
-    attribution: "— Bestuurslid, non-profit organisatie",
+    title: "Discreet en betrouwbaar",
+    body: "Vertrouwelijke informatie en complexe situaties vragen om zorgvuldigheid, integriteit en een professionele aanpak.",
   },
   {
-    quote:
-      "Scherp, secuur en precies de regie die we nodig hadden tussen alle stakeholders in.",
-    attribution: "— Directeur, adviesorganisatie",
+    title: "Strategisch én praktisch",
+    body: "Van executive support en projectcoördinatie tot internationale reizen en persoonlijke ondersteuning: ik denk vooruit én zorg voor de uitvoering.",
   },
   {
-    quote:
-      "Onze bestuurlijke bijeenkomst liep voor het eerst zonder haperingen — van voorbereiding tot nazorg.",
-    attribution: "— Manager, publieke sector",
+    title: "Persoonlijke betrokkenheid",
+    body: "Geen groot bureau, maar één vast aanspreekpunt dat jouw manier van werken leert kennen.",
+  },
+  {
+    title: "Rust en overzicht",
+    body: "Ik creëer structuur, bewaak prioriteiten en zorg dat alles achter de schermen soepel verloopt.",
   },
 ];
 
@@ -48,15 +49,16 @@ export default function HomePage() {
           className="min-w-[320px] flex-1 basis-[460px]"
         >
           <div className="mb-[18px] text-sm font-semibold tracking-[0.14em] text-accent uppercase">
-            Interim structuur &amp; regie
+            Executive Partner voor ondernemers, bestuurders en professionals
           </div>
           <h1 className="mb-6 font-serif text-[clamp(40px,5.2vw,64px)] leading-[1.08] font-medium text-ink">
             Overzicht terug in organisaties die te snel gaan.
           </h1>
           <p className="mb-[34px] max-w-[480px] text-lg leading-[1.6] text-ink-soft">
-            Wanneer werk zich opstapelt en besluiten vertragen, breng ik rust,
-            structuur en regie terug — voor directie, bestuur en teams die
-            middenin de complexiteit zitten.
+            Van strategische coördinatie en executive support tot
+            internationale reizen, exclusieve evenementen en persoonlijke
+            ontzorging. Ik zorg dat alles achter de schermen naadloos
+            verloopt, zodat jij je kunt richten op wat écht belangrijk is.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a
@@ -82,7 +84,7 @@ export default function HomePage() {
           <div className="relative aspect-[2/3] overflow-hidden rounded-[28px] bg-muted">
             <Image
               src="/hero.jpg"
-              alt="Oprichter van Planvista aan het werk"
+              alt="Oprichter van PlanVista aan het werk"
               fill
               sizes="(min-width: 1024px) 380px, 90vw"
               className="object-cover object-top"
@@ -119,23 +121,24 @@ export default function HomePage() {
       <section className="bg-dark px-8 py-[70px]">
         <div className="mx-auto max-w-[1180px]">
           <h2 className="mb-10 text-center font-serif text-[clamp(28px,3.4vw,38px)] font-medium text-cream">
-            Wat opdrachtgevers zeggen
+            Waarom kiezen voor PlanVista?
           </h2>
           <Reveal
             stagger={0.15}
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2"
           >
-            {TESTIMONIALS.map((t) => (
+            {WHY_CHOOSE.map((item) => (
               <div
-                key={t.attribution}
+                key={item.title}
                 className="rounded-[22px] bg-dark-card p-[28px_26px]"
               >
-                <p className="mb-[18px] text-[15.5px] leading-[1.65] text-dark-text italic">
-                  &ldquo;{t.quote}&rdquo;
+                <h3 className="mb-2 flex items-start gap-2.5 font-serif text-[19px] font-semibold text-cream">
+                  <span className="text-accent-light">✔</span>
+                  {item.title}
+                </h3>
+                <p className="text-[15.5px] leading-[1.65] text-dark-text">
+                  {item.body}
                 </p>
-                <div className="text-sm font-semibold text-accent-light">
-                  {t.attribution}
-                </div>
               </div>
             ))}
           </Reveal>
@@ -147,7 +150,7 @@ export default function HomePage() {
           Structuur begint met een gesprek.
         </h2>
         <p className="mb-[30px] text-lg text-ink-soft">
-          Benieuwd of Planvista past bij jouw organisatie? Plan een
+          Benieuwd of PlanVista past bij jouw organisatie? Plan een
           vrijblijvende kennismaking.
         </p>
         <a

@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Planvista",
+  title: "Contact — PlanVista",
 };
 
 export default function ContactPage() {
@@ -21,16 +21,24 @@ export default function ContactPage() {
         <h1 className="mb-[22px] font-serif text-[clamp(34px,4.6vw,48px)] leading-[1.1] font-medium text-ink">
           Laten we kennismaken.
         </h1>
+        <p className="mb-4 max-w-[440px] text-[16.5px] leading-[1.7] text-ink-soft">
+          Op zoek naar een betrouwbare Executive Partner die rust, overzicht
+          en structuur brengt in jouw werk en dagelijks leven?
+        </p>
+        <p className="mb-4 max-w-[440px] text-[16.5px] leading-[1.7] text-ink-soft">
+          Of het nu gaat om executive support, strategische coördinatie,
+          internationale reizen, evenementen of persoonlijke ondersteuning,
+          iedere samenwerking begint met een vrijblijvend
+          kennismakingsgesprek.
+        </p>
         <p className="mb-5 max-w-[440px] text-[16.5px] leading-[1.7] text-ink-soft">
-          Op zoek naar ondersteuning op strategisch en organisatorisch
-          niveau, of professionele begeleiding bij bijeenkomsten en
-          trajecten? Vul het formulier in — ik neem persoonlijk contact met
-          je op.
+          Vul het formulier in en ik neem persoonlijk contact met je op. Ik
+          kijk ernaar uit om kennis te maken.
         </p>
         <div className="relative mt-7 aspect-[2/3] max-w-[320px] overflow-hidden rounded-3xl bg-muted">
           <Image
             src="/contact.jpg"
-            alt="Contact met Planvista"
+            alt="Contact met PlanVista"
             fill
             sizes="320px"
             className="object-cover object-top"
@@ -47,7 +55,7 @@ export default function ContactPage() {
             Instagram
           </a>
           <a
-            href="https://www.linkedin.com/company/planvistaservices"
+            href="https://www.linkedin.com/in/bo-iqbal-aa9ba5173"
             className="text-ink hover:text-ink-soft"
           >
             LinkedIn

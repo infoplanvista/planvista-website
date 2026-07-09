@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
-  { href: "/over-planvista", label: "Over Planvista" },
+  { href: "/over-planvista", label: "Over PlanVista" },
   { href: "/diensten", label: "Diensten" },
-  { href: "/tarieven", label: "Tarieven" },
+  { href: "/samenwerken", label: "Samenwerken" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -21,7 +21,7 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
-            alt="Planvista"
+            alt="PlanVista"
             width={228}
             height={226}
             className="h-[50px] w-auto"

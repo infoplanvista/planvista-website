@@ -17,9 +17,9 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Planvista — Interim structuur & regie",
+  title: "PlanVista — Executive Partner voor ondernemers en bestuurders",
   description:
-    "Structuur en overzicht in organisaties waar complexiteit toeneemt.",
+    "Executive support, strategische coördinatie en lifestyle management.",
 };
 
 export default function RootLayout({
